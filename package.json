@@ -1,0 +1,22 @@
+{
+    "name": "zoid-sdk",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "private": "true",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "parcel index.html --open",
+        "build": "parcel build sdk.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "zoid": "^9.0.62"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.10",
+        "@babel/plugin-transform-react-jsx": "^7.12.10"
+    }
+}
