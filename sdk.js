@@ -1,22 +1,8 @@
-/* @jsx node */
-// import iFrameResizer from "iframe-resizer/js/iframeResizer";
 import * as zoid from "zoid/dist/zoid.frame";
 // import { node, dom } from "jsx-pragmatic";
 import containerTemplate from "./containerTemplate";
 import prerenderTemplate from "./prerenderTemplate";
 // const element = document.getElementById("converse-app");
-
-// const styleElement =
-//     "<style> iframe { width: 1px; min-width: 100%; background-color: transparent;}</style>";
-// element.insertAdjacentHTML("afterbegin", styleElement);
-
-// const newElement =
-//     '<iframe id="converseIframe" loading="lazy" src="http://localhost:1234"  frameborder="0"></iframe>';
-
-// element.insertAdjacentHTML("beforeend", newElement);
-
-// // // targetOrigin: "http://localhost:1234";
-// iFrameResizer([{ log: true }], "#converseIframe");
 
 // window.addEventListener("DOMContentLoaded", function (event) {
 //     new MyWidget("#converse-app", "toto", "tata");
@@ -24,7 +10,7 @@ import prerenderTemplate from "./prerenderTemplate";
 // });
 
 const localhost = "http://localhost:1234";
-const publicUrl = "https://adilide-converse.vercel.com";
+const publicUrl = "https://adilide-converse.vercel.app/";
 
 const zoidComponentInit = zoid.create({
     tag: "converse-presentation",
@@ -53,13 +39,6 @@ const zoidComponentInit = zoid.create({
     },
     containerTemplate: containerTemplate,
     prerenderTemplate: prerenderTemplate,
-    // prerenderTemplate: function containerTemplate({ doc }) {
-    //     const html = doc.createElement("html");
-    //     const p = doc.createElement("p");
-    //     p.innerText = "Please wait while the component loads...";
-    //     html.appendChild(p);
-    //     return html;
-    // },
 });
 
 // const tag = document.getElementById("converse-script");
