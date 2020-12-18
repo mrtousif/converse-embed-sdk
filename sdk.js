@@ -10,12 +10,12 @@ import prerenderTemplate from "./prerenderTemplate";
 // });
 
 const localhost = "http://localhost:1234";
-// const publicUrl = "https://adilide-converse.vercel.app/";
-const publicUrl2 = "https://converse-frontend-parcel.vercel.app/";
+const publicUrl = "https://adilide-converse.vercel.app/";
+// const publicUrl2 = "https://converse-frontend-parcel.vercel.app/";
 
 const zoidComponentInit = zoid.create({
     tag: "converse-presentation",
-    url: process.env.NODE_ENV === "development" ? localhost : publicUrl2,
+    url: process.env.NODE_ENV === "development" ? localhost : publicUrl,
     dimensions: {
         width: "100%",
         height: "500px",
