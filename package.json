@@ -7,16 +7,16 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "parcel index.html --open",
-        "build": "parcel build sdk.js"
+        "build": "parcel build sdk.js",
+        "serve": "serve dist"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "zoid": "^9.0.62"
+        "zoid": "^9.0.63"
     },
     "devDependencies": {
-        "@babel/core": "^7.12.10",
-        "@babel/plugin-transform-react-jsx": "^7.12.10"
+        "@babel/core": "^7.12.10"
     }
 }

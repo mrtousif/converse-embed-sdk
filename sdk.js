@@ -2,7 +2,8 @@
 // import iFrameResizer from "iframe-resizer/js/iframeResizer";
 import * as zoid from "zoid/dist/zoid.frame";
 // import { node, dom } from "jsx-pragmatic";
-import { containerTemplate } from "./containerTemplate";
+import containerTemplate from "./containerTemplate";
+import prerenderTemplate from "./prerenderTemplate";
 // const element = document.getElementById("converse-app");
 
 // const styleElement =
@@ -24,7 +25,7 @@ import { containerTemplate } from "./containerTemplate";
 
 const zoidComponentInit = zoid.create({
     tag: "converse-presentation",
-    url: "http://localhost:1234",
+    url: "https://adilide-converse.vercel.app/",
     dimensions: {
         width: "100%",
         height: "500px",
@@ -48,14 +49,12 @@ const zoidComponentInit = zoid.create({
         // },
     },
     containerTemplate: containerTemplate,
-    // prerenderTemplate: function template({ doc }) {
+    prerenderTemplate: prerenderTemplate,
+    // prerenderTemplate: function containerTemplate({ doc }) {
     //     const html = doc.createElement("html");
-    //     const el = Object.assign(doc.createElement("p"), {
-    //         textContent: `Loading please wait`,
-    //         className: "and-is-classy",
-    //     });
-    //     html.appendChild(el);
-    //     el.insertAdjacentHTML("afterbegin", preloaderStyle);
+    //     const p = doc.createElement("p");
+    //     p.innerText = "Please wait while the component loads...";
+    //     html.appendChild(p);
     //     return html;
     // },
 });
@@ -79,6 +78,7 @@ const options = {
     //     el.style.backgroundColor = color;
     // },
 };
+
 const zoidComponent = zoidComponentInit(options);
 // console.log(zoidComponent);
 

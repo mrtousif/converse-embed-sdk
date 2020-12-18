@@ -21,7 +21,7 @@ const CLASS = {
     INVISIBLE: "zoid-invisible",
 };
 
-export function containerTemplate({
+export default function containerTemplate({
     uid,
     frame,
     prerenderFrame,
