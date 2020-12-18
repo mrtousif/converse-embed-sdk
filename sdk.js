@@ -23,9 +23,12 @@ import prerenderTemplate from "./prerenderTemplate";
 //     console.log(CONVERSE_WEBSITE_ID);
 // });
 
+const localhost = "http://localhost:1234";
+const publicUrl = "https://adilide-converse.vercel.com";
+
 const zoidComponentInit = zoid.create({
     tag: "converse-presentation",
-    url: "https://adilide-converse.vercel.app/",
+    url: process.env.NODE_ENV === "development" ? localhost : publicUrl,
     dimensions: {
         width: "100%",
         height: "500px",
