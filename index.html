@@ -59,15 +59,14 @@
                         </p>
                     </div>
                 </section>
-                <div id="converse-app">
-                    <script>
-                        const CONVERSE_CONFIG = {
-                            pageUrl: "http://localhost:port/post", //canonical url
-                            id: "5fb3dc259f33b144981e2d4f", // identifier of your page or post
-                        };
-                    </script>
-                    <script id="converse-script" async src="./sdk.js"></script>
-                </div>
+                <div id="converse-app"></div>
+                <script>
+                    window.CONVERSE_CONFIG = {
+                        pageUrl: "http://localhost:port/post", //canonical url
+                        id: "5fb3dc259f33b144981e2d4f", // identifier of your page or post
+                    };
+                </script>
+                <script id="converse-script" async src="./sdk.js"></script>
             </div>
             <div class="column">
                 <section class="section">
